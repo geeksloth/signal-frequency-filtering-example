@@ -7,7 +7,7 @@ A simple demonstration of signal frequency filtering using Python.
 ## Step 1. Signal Generation
 1. Generate a linear space-time starting value of the sequence from 0, to the stop sequence at 10, and there are 2000 samples. 
 2. Generate a signal from the previous space-time with 2 frequencies with different amplitude.
-3. Analyze the frequencies by applying the `Fourier Analysis`. If the length of our data is in seconds, now it is in Hertz.
+3. Analyze the frequencies by applying the `Fourier Analysis`. If the length of our data is in `second`, now it is in `Hz`.
 
 ![code-1.png](static/code-1.png)
 
@@ -31,8 +31,7 @@ signal = np.cos(5*np.pi*time) + np.cos(7*np.pi*time)
 
 W = fftfreq(signal.size, d=time[1]-time[0])
 f_signal = rfft(signal)
-
-# If our original signal time was in seconds, this is now in Hz    
+   
 cut_f_signal = f_signal.copy()
 cut_f_signal[(W<6)] = 0
 
