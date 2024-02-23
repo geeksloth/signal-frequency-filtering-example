@@ -1,4 +1,4 @@
-# Signal-Frequency-Filtering-Example
+# Signal Frequency Filtering Example
 A simple demonstration of signal frequency filtering using Python.
 
 ![Figure_1.png](static/Figure_1.png)
